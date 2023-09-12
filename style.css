@@ -12,6 +12,11 @@
 
 li {
   list-style: none;
+  z-index: 2000000;
+}
+li:hover {
+  transition: 0.2s ease;
+  cursor: pointer;
 }
 
 p {
@@ -21,6 +26,7 @@ body {
   min-height: 100vh;
   background: rgb(44, 42, 42);
   color: rgb(214, 208, 208);
+  cursor: none;
 }
 
 nav {
@@ -119,6 +125,43 @@ button {
 
 .img-container img {
   height: 60px;
+}
+
+#small-circle {
+  background: rgba(13, 46, 230, 0.959);
+  mix-blend-mode: exclusion;
+  width: 10px;
+  height: 10px;
+  border-radius: 100px;
+  display: inline-block;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+
+#medium-circle {
+  background: rgba(255, 255, 255, 0.274);
+  mix-blend-mode: exclusion;
+  width: 80px;
+  height: 8cqi;
+  border-radius: 100px;
+  display: inline-block;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  z-index: -0;
+  transition: 0.3s ease;
+}
+
+#large-circle {
+  background: rgba(14, 0, 0, 0.164);
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+  display: inline-block;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  z-index: -3000000;
+  transition: 0.4s ease;
 }
 
 /* **********MEDIA QUERIES********** */
